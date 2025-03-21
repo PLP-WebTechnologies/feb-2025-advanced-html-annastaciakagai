@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <ol>
+                <ol type="I">
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#personal-details">Form</a></li>
+                    <li><a href="#career">Career</a></li>
+                </ol>
+            </ol>
+        </header>
+        <section id="intro">
+            <h1>Hi, my name is <i>Annastacia</i> ✨</h1>
+            <p>I am a Software Engineer based in Nairobi, kenya. Lately I've been working on myself. That is my mental and physical health, unlearning beliefs that 
+                no longer serve me, and learning new things that will help me grow. I am also re-learning the basics of programming. <a href="https://academy.powerlearnprojectafrica.org/">PLP Academy</a>  has made the process simpler and more fun.</p>
+            </p>
+            <h3>To join me in this journey of learning, unlearning and re-learning, kindly fill the form below to get started!!</h3>
+        </section>
+        <fieldset id="personal-details">
+            <legend>Fill the form below</legend>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your username" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required><br><br>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" pattern="[0-9] {10}" required>
+                <label for="address">Address:</label>
+                <input type="text" name="address" id="address" placeholder="Enter your address" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" required><br><br><br>
+                <label for="description">What do you enjoy most about programming?</label>
+                <textarea name="description" id="description" cols="30" rows="5" placeholder="200 characters max"></textarea><br><br>
+
+                <fieldset>
+                    <legend>Which is your highest level of education?</legend>
+                    <input type="radio" name="language" value="Highschool" id="Highschool">
+                    <label for="Highschool">Highschool</label>
+                    <input type="radio" name="language" value="Diploma" id="Diploma">
+                    <label for="Diploma">Diploma</label>
+                    <input type="radio" name="language" value="Undergraduate" id="Undergraduate">
+                    <label for="Undergraduate">Undergraduate</label>
+                    <input type="radio" name="language" value="Masters" id="Masters">
+                    <label for="Masters">Masters</label>
+                    <input type="radio" name="language" value="other" id="other">
+                    <label for="other">other</label>
+                </fieldset>
+
+
+                <label for="genre">Choose your favourite programming specialization:</label>
+                <select name="genre">
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                    <option value="fullstack">Fullstack</option>
+                    <option value="mobile">Mobile</option>
+                    <option value="devops">DevOps</option>
+                </select><br>
+                <fieldset id="career">
+                    <legend>Choose your favourite programming language</legend>
+                    <input type="checkbox" name="language" value="javascript" id="javascript">
+                    <label for="javascript">Javascript</label>
+                    <input type="checkbox" name="language" value="python" id="python">
+                    <label for="python">Python</label>
+                    <input type="checkbox" name="language" value="java" id="java">
+                    <label for="java">Java</label>
+                    <input type="checkbox" name="language" value="java" id="java">
+                    <label for="java">PHP</label>
+                    <input type="checkbox" name="language" value="java" id="java">
+                    <label for="java">CSS</label>
+                </fieldset>
+                <button type="submit">Submit</button>
+        </fieldset>
+    </div>
+</body>
+</html>
